@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>TRAVIS SCOTT</title>
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="body">
+
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+    <div id="element">
+        <div class="overflow"></div>
+    </div>
+
+    <header class="header">
+        <div class="header_inner">
+            <a href="index.html">
+                <img src="images/logo_white 1.svg" alt="logo" width="80" height="32">
+            </a>
+            <nav class="header_nav">
+                <ul class="header_list">
+
+                    <li>
+                        <a class="header_link" href="index.html">ГЛАВНАЯ</a>
+                    </li>
+                    <li>
+                        <a class="header_link" href="bio.html">БИОГРАФИЯ</a>
+                    </li>
+                    <li>
+                        <a class="header_link" href="disk.html">ДИСКОГРАФИЯ</a>
+                    </li>
+                    <li>
+                        <a class="header_link" href="tour.html">ТУР</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"> RU<img src="images/down.svg" class="dropdown_sigh"></button>
+                            <div class="dropdown-content">
+                                <a href="/">EN</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="disk">
+        <div class="swiper sample-slider s2" >
+            <div class="swiper-wrapper sw2">
+                <div class="swiper-slide sl2"><img src="images/astro.png"></div>
+                <div class="swiper-slide sl2"><img src="images/utopia.png"></div>
+                <div class="swiper-slide sl2"> <img src="images/rodeo.png"></div>
+                <div class="swiper-slide sl2"> <img src="images/4x4.jpg"></div>
+                <div class="swiper-slide sl2"> <img src="images/bf.jpg"></div>
+                <div class="swiper-slide sl2"> <img src="images/hidm.jpg"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="footer_inner">
+            <a href="index.html">
+                <img src="images/logo_white 1.svg" alt="logo" width="80" height="32">
+            </a>
+            <div class="footer_btns">
+                <ul class="footer_list">
+                    <li>
+                        <a class="footer_link">scottinfo1212gmail.com</a>
+                    </li>
+                    <li>
+                        <a class="footer_link" href="/">Ссылка на отчет</a>
+                    </li>
+                    <li>
+                        <button class="footer_btn">Контакты</button>
+                    </li>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <img src="/images/Close.svg" class="close_btn">
+
+        <h3 class="modal_title">ФОРМА СВЯЗИ</h3>
+        <p class="modal_cont"><input class="color" type="text" placeholder="*ФИО"></p>
+        <p class="modal_cont c2"><input class="color" type="email" placeholder="*E-Mail"></p>
+        <p class="modal_cont c3"><input class="color" type="text" placeholder="*Сообщение"></p>
+
+        <button class="modal_btn" type="submit">ОТПРАВИТЬ</button>
+    </div>
+
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+        integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script>
+        SmoothScroll({
+            animationTime: 800,
+            stepSize: 75,
+            accelerationDelta: 30,
+            accelerationMax: 1,
+            pulseAlgorithm: true,
+            pulseScale: 4,
+            pulseNormalize: 1,
+        })
+    </script>
+
+    <script src="/js/swiper_disk.js"></script>
+    <script src="/js/modal.js"></script>
+</body>
+
+</html>

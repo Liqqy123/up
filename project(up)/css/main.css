@@ -1,0 +1,236 @@
+.banner_btn {
+    border: 1px solid var(--beige);
+    border-radius: 5px;
+    padding: 2px 20px;
+    color: var(--beige);
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    top: -40px;
+    left: 90%;
+    background-color: black;
+    transition: background-color 0.6s;
+
+}
+
+.banner {
+    height: 90px;
+}
+
+.banner_btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.info {
+    background-image: url("/images/w1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    padding: 120px 200px;
+    margin-bottom: 50px;
+}
+
+.main_text {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-right: auto;
+}
+
+.main_title {
+    font-size: 64px;
+    font-family: 600;
+    color: var(--beige);
+    line-height: 1;
+    transition: color 0.5s;
+    width: 400px;
+}
+.main_title:hover {
+color: var(--light-blue);
+}
+
+.main_subtext {
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 400;
+    color: rgb(180, 180, 180);
+    line-height: 1.8;
+    flex-wrap: wrap;
+    width: 430px;
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+.main_img {
+    object-fit: cover;
+}
+
+.line {
+    padding: 50px 200px;
+}
+
+.separ {
+    background-image: url("/images/bg_separ.png");
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.anim_img {
+    width: 650px;
+    height: 450px;
+    position: relative;
+    left: 26%;
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+}
+
+@keyframes autoRotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.work {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    background-color: black;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    color: white;
+}
+
+.sample-slider .swiper-pagination-bullet {
+    background-color: white;
+}
+
+.swiper {
+    width: 1000px;
+}
+
+
+.work_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-family: 500;
+    text-decoration: underline;
+    height: 100px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.video {
+    background-image: url("/images/Rectangle44.png");
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+#block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.modal {
+    top: 1%;
+    left: 28%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+    background-image: url("/images/modal_bg.png");
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+    padding: 66px 100px;
+    position: fixed;
+    z-index: 100;
+
+    opacity: 0;
+    visibility: visible;
+    pointer-events: none;
+    transition: opacity .4s, visibility .4s;
+}
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal_title {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.modal_cont {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 400px;
+}
+.color{
+color: white;
+}
+.c2{
+    position: relative;
+    top: 20px;
+}
+.c3{
+    position: relative;
+    top: 40px;
+    height: 150px;
+}
+.modal_btn{
+    position: relative;
+    top: 80px;
+    background-color: white;
+    width: 400px;
+    padding: 5px 0px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.modal_btn:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.close_btn{
+    position: relative;
+    left: 250px;
+    top: -35px;
+}

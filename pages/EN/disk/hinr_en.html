@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>TRAVIS SCOTT</title>
+    <link rel="shortcut icon" href="../../../images/logo_black 1.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="body">
+
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+    <div id="element">
+        <div class="overflow"></div>
+    </div>
+
+    <header class="header">
+        <div class="header_inner">
+            <a href="index.html">
+                <img src="../../../images/logo_white 1.svg" alt="logo" width="80" height="32">
+            </a>
+
+            <nav class="header_nav">
+                <ul class="header_list">
+
+                    <li>
+                        <a class="header_link" href="../index_en.html">HOME</a>
+                    </li>
+                    <li>
+                        <a class="header_link" href="../bio_en.html">BIOGRAPHY </a>
+                    </li>
+                    <li>
+                        <a class="header_link" href="../disk_en.html">DISCOGRAPHY</a>
+                    </li>
+                    <li>
+                        <a class="header_link" href="../tour_en.html">TOUR</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"> EN<img src="../../../images/down.svg" class="dropdown_sigh"></button>
+                            <div class="dropdown-content">
+                                <a href="/pages/disk/hinr.html">RU</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <div class="project">
+
+        <div class="project_text">
+            <h3>Highest in the Room</h3>
+            <p>It became Scott's second single after "Sicko Mode" to reach number one on the US chart. Was published in
+                in various formats, including as a gramophone record, cassette and CD single.
+            </p>
+
+            <div class="project_links">
+                <a href="/"><img src="../../../images/Spotify.svg"></a>
+                <a href="/"><img src="../../../images/YouTube.svg"></a>
+            </div>
+
+        </div>
+    </div>
+    <div style="display: flex; padding:20px 50px;">
+        <a href="../disk_en.html" style="cursor: pointer;" class="disk_back">Back</a>
+    </div>
+
+
+
+    <div class="footer_inner">
+        <a href="index.html">
+            <img src="../../../images/logo_white 1.svg" alt="logo" width="80" height="32">
+        </a>
+        <div class="footer_btns">
+            <ul class="footer_list">
+                <li>
+                    <a class="footer_link">scottinfo1212gmail.com</a>
+                </li>
+                <li>
+                    <a class="footer_link" href="/">Link to the report</a>
+                </li>
+                <li>
+                    <button class="footer_btn">Contacts</button>
+                </li>
+        </div>
+    </div>
+</footer>
+
+<div class="modal">
+    <img src="../../../images/Close.svg" class="close_btn">
+
+    <h3 class="modal_title">FORM OF COMMUNICATION</h3>
+    <p class="modal_cont"><input class="color" type="text" placeholder="*Name"></p>
+    <p class="modal_cont c2"><input class="color" type="email" placeholder="*E-Mail"></p>
+    <p class="modal_cont c3"><input class="color" type="text" placeholder="*Message"></p>
+
+    <button class="modal_btn" type="submit">SEND</button>
+</div>
+
+<script>
+    window.onload = function () {
+        document.body.classList.add('loaded_hiding');
+        window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+        }, 500);
+    }
+</script>
+
+
+<script src="../../../js/modal.js"></script>
+</body>
+
+</html>

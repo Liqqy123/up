@@ -1,0 +1,84 @@
+.header {
+  background-color: black;
+  width: 100%;
+}
+
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+}
+
+.header_list {
+  display: flex;
+  font-size: 13px;
+  font-weight: 400;
+  flex-flow: row wrap;
+  color: var(--beige);
+  gap: 60px;
+align-items: center;
+}
+
+.header_link {
+  padding: 5px 15px;
+  border-radius: 8px;
+  color: var(--beige);
+  transition:color 0.5s;
+  
+}
+
+.header_link:hover {
+  color:var(--light-blue);
+}
+
+.dropbtn {  
+  display: flex;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: var(--beige);
+  border-radius: 5px;
+  padding: 5px 8px;
+  color:black;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown_sigh{
+  position: relative;
+padding: 6px 5px;
+transform: rotate(0deg);
+transition: 0.2s ease-in-out all;
+}
+.dropdown_sigh:hover{
+transform: rotate(180deg);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--beige);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 11px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--light-blue);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--light-blue);
+}

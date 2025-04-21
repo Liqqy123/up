@@ -1,0 +1,218 @@
+.info {
+    background-image: url("/images/w1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 120px 200px;
+    margin-bottom: 50px;
+}
+
+.main_text {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-right: 150px;
+}
+
+.main_text span {
+    text-decoration: underline dotted;
+    text-decoration-thickness: 3px;
+}
+
+.main_title {
+    font-size: 64px;
+    font-family: 600;
+    color: var(--beige);
+    line-height: 1;
+    transition: color 0.5s;
+    width: 480px;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+.main_title:hover {
+    color: var(--light-blue);
+}
+
+.main_subtext {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 400;
+    color: rgb(180, 180, 180);
+    line-height: 1.8;
+    flex-wrap: wrap;
+    width: 430px;
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+.main_img {
+    object-fit: cover;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.separ {
+    height: 600px;
+    width: 100%;
+
+}
+
+.anim_bg {
+    position: absolute;
+    left: 23%;
+
+}
+
+.anim_img {
+    width: 650px;
+    height: 450px;
+    position: relative;
+    left: 32%;
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+}
+
+@keyframes autoRotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.video {
+    background-image: url("/images/Rectangle44.png");
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+#block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@media(max-width:1440px) {
+    .anim_bg {
+        left: 17%;
+    }
+
+    .anim_img {
+        left: 28%;
+    }
+}
+
+@media(max-width:1300px) {
+    .anim_bg {
+        left: 14%;
+    }
+
+    .anim_img {
+        left: 26%;
+    }
+}
+
+@media(max-width:1300px) {
+    .anim_bg {
+        left: 14%;
+    }
+
+    .anim_img {
+        left: 26%;
+    }
+}
+
+@media(max-width:1200px) {
+    .anim_bg {
+        left: 11%;
+    }
+
+    .anim_img {
+        left: 25%;
+    }
+}
+
+@media(max-width:1150px) {
+    .anim_bg {
+        left: 6%;
+    }
+
+    .anim_img {
+        left: 22%;
+    }
+}
+
+@media(max-width:1000px) {
+    .anim_bg {
+        left: 2%;
+    }
+
+    .anim_img {
+        left: 18%;
+    }
+
+    .main_title {
+        font-size: 58px;
+    }
+
+    .main_img {
+        width: 450px;
+        height: 500px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 28%;
+    }
+
+    .info {
+        flex-direction: column-reverse;
+        height: 1050px;
+        padding: 0px 0px;
+    }
+
+    .main_subtext {
+        text-align: center;
+        width: 600px;
+        margin-left: 200px;
+    }
+
+    .main_title {
+        margin-left: 200px;
+        width: 600px;
+        text-align: center;
+    }
+    .video_content {
+        height: 400px;
+       width: 700px;
+    }
+    
+}

@@ -1,0 +1,20 @@
+@import 'basic/_reset.css';
+@import 'basic/_vars.css';
+@import 'basic/_fonts.css';
+@import 'basic/_global.css';
+
+@import 'components/_header.css';
+@import 'components/_footer.css';
+@import 'components/preloader.css';
+
+@import 'main/main.css';
+@import 'main/main_work.css';
+@import 'main/banner.css';
+
+@import 'modal.css';
+
+@import 'tour/tour.css';
+@import 'bio/bio.css';
+
+@import 'disk/disk.css';
+@import 'disk/project.css';

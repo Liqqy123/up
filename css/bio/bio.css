@@ -1,0 +1,65 @@
+.bio {
+display: flex;
+    height: 840px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content:target {
+    display: block;
+}
+
+.tab {
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 300px;
+    height: 160px;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.tab-nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;    
+    color: white;
+}
+.tab-link{
+transition: all 0.3s;
+
+}
+.tab-link:hover{
+color: var(--light-blue);
+}
+
+#swiper_bio{
+height: 300px;
+width: 300px;
+position: relative;
+top: 60%;
+left: -550px;
+}
+
+.bio_info {
+    position: relative;
+    left: -35%;
+    width:600px;
+    padding: 60px 50px;
+    line-height: 2;
+}
+.tab-content{
+text-indent: 20px;
+
+}
+.tab-content:active{
+  transition: all 1s;  
+}
+.tab-content h3{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
